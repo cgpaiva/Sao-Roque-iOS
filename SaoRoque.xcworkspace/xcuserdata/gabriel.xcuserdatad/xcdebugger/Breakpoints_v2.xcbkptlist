@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8C92CB43-494F-4827-A986-F07881AB239E"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25497EBB-6D34-4E35-8A4F-7553C9EB7ACE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SaoRoque/Presentation/Login/LoginViewController.swift"
+            startingColumnNumber = "27"
+            endingColumnNumber = "51"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "signin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

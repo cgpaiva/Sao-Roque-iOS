@@ -13,6 +13,7 @@
 		C017BEBE28BDA6110007A212 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = C017BEBD28BDA6110007A212 /* BottomSheet */; };
 		C017BEC128BDA71B0007A212 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017BEC028BDA71B0007A212 /* SigninViewController.swift */; };
 		C017BEC328BDA7F20007A212 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017BEC228BDA7F20007A212 /* SigninView.swift */; };
+		C01F399B28C429C7006F5555 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F399A28C429C7006F5555 /* UIDevice+Extension.swift */; };
 		C03DC69628BB969D002B7F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DC69528BB969D002B7F75 /* AppDelegate.swift */; };
 		C03DC69828BB969D002B7F75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DC69728BB969D002B7F75 /* SceneDelegate.swift */; };
 		C03DC69A28BB969D002B7F75 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DC69928BB969D002B7F75 /* LoginViewController.swift */; };
@@ -27,14 +28,18 @@
 		C03DC6BF28BC3009002B7F75 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C03DC6BC28BC3009002B7F75 /* Roboto-Regular.ttf */; };
 		C03DC6C028BC3009002B7F75 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C03DC6BD28BC3009002B7F75 /* Roboto-Bold.ttf */; };
 		C06AD0D528BC3A8C00BCC84D /* ImageAssetsGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AD0D428BC3A8C00BCC84D /* ImageAssetsGenerated.swift */; };
+		D1EB7DF5559E9606491319C5 /* Pods_SaoRoque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CA30B4F77D3264FC9C09BB /* Pods_SaoRoque.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A150364ACCCC20C1CFDA441 /* Pods-SaoRoque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaoRoque.release.xcconfig"; path = "Target Support Files/Pods-SaoRoque/Pods-SaoRoque.release.xcconfig"; sourceTree = "<group>"; };
+		47CA30B4F77D3264FC9C09BB /* Pods_SaoRoque.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaoRoque.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C017BEB628BD9DAB0007A212 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C017BEB828BD9EDE0007A212 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		C017BEBA28BDA03E0007A212 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		C017BEC028BDA71B0007A212 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		C017BEC228BDA7F20007A212 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		C01F399A28C429C7006F5555 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		C03DC69228BB969D002B7F75 /* SaoRoque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaoRoque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03DC69528BB969D002B7F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C03DC69728BB969D002B7F75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		C03DC6BC28BC3009002B7F75 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		C03DC6BD28BC3009002B7F75 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		C06AD0D428BC3A8C00BCC84D /* ImageAssetsGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssetsGenerated.swift; sourceTree = "<group>"; };
+		CEF56723816DA76E3A65F202 /* Pods-SaoRoque.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaoRoque.debug.xcconfig"; path = "Target Support Files/Pods-SaoRoque/Pods-SaoRoque.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +65,30 @@
 			files = (
 				C03DC6B528BC2B9C002B7F75 /* SnapKit in Frameworks */,
 				C017BEBE28BDA6110007A212 /* BottomSheet in Frameworks */,
+				D1EB7DF5559E9606491319C5 /* Pods_SaoRoque.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E7BBFD18DA6517DD3E4B60F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEF56723816DA76E3A65F202 /* Pods-SaoRoque.debug.xcconfig */,
+				1A150364ACCCC20C1CFDA441 /* Pods-SaoRoque.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		80512D1943AFDC92F075B18B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47CA30B4F77D3264FC9C09BB /* Pods_SaoRoque.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C017BEBF28BDA70E0007A212 /* Signin */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +103,8 @@
 			children = (
 				C03DC69428BB969D002B7F75 /* SaoRoque */,
 				C03DC69328BB969D002B7F75 /* Products */,
+				3E7BBFD18DA6517DD3E4B60F /* Pods */,
+				80512D1943AFDC92F075B18B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +174,7 @@
 				C03DC6B728BC2DA2002B7F75 /* UIView+Extension.swift */,
 				C017BEB828BD9EDE0007A212 /* UIViewController+Extension.swift */,
 				C017BEBA28BDA03E0007A212 /* UITextField+Extension.swift */,
+				C01F399A28C429C7006F5555 /* UIDevice+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -186,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C03DC6A628BB969E002B7F75 /* Build configuration list for PBXNativeTarget "SaoRoque" */;
 			buildPhases = (
+				A33015C3269D00940F0A603D /* [CP] Check Pods Manifest.lock */,
 				C03DC68E28BB969D002B7F75 /* Sources */,
 				C03DC68F28BB969D002B7F75 /* Frameworks */,
 				C03DC69028BB969D002B7F75 /* Resources */,
+				04DF8AB647FDB8EB041424A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,11 +285,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04DF8AB647FDB8EB041424A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaoRoque/Pods-SaoRoque-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaoRoque/Pods-SaoRoque-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaoRoque/Pods-SaoRoque-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A33015C3269D00940F0A603D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaoRoque-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C03DC68E28BB969D002B7F75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01F399B28C429C7006F5555 /* UIDevice+Extension.swift in Sources */,
 				C017BEB928BD9EDE0007A212 /* UIViewController+Extension.swift in Sources */,
 				C03DC6B828BC2DA2002B7F75 /* UIView+Extension.swift in Sources */,
 				C017BEC328BDA7F20007A212 /* SigninView.swift in Sources */,
@@ -406,6 +478,7 @@
 		};
 		C03DC6A728BB969E002B7F75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF56723816DA76E3A65F202 /* Pods-SaoRoque.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,6 +512,7 @@
 		};
 		C03DC6A828BB969E002B7F75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A150364ACCCC20C1CFDA441 /* Pods-SaoRoque.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

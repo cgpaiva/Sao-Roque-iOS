@@ -7,8 +7,11 @@
 
 import UIKit
 import BottomSheet
+import MaterialComponents.MaterialBottomSheet
 
 class LoginViewController: UIViewController {
+    
+    private let iphoneSeDeviceName = "iPhone8,4"
     
     override func loadView() {
         let view = LoginView()
@@ -28,11 +31,19 @@ class LoginViewController: UIViewController {
 extension LoginViewController: LoginViewDelegate {
     func signin() {
         
-      var signinModal = SigninViewController()
+        let signinModal = SigninViewController()
+    
+        let bottomSheet = MDCBottomSheetController(contentViewController: signinModal)
         
-        signinModal.modalPresentationStyle = .overCurrentContext
         
-        self.present(signinModal, animated: true)
+        if UIDevice.current.modelName != iphoneSeDeviceName {
+            bottomSheet.preferredContentSize = CGSize(width: self.view.frame.size.width, height: self.view.frame.size.height/2.3)
+        }
+        
+        signinModal.modalPresentationStyle = .pageSheet
+        
+        
+        self.present(bottomSheet, animated: true)
       
     }
 }

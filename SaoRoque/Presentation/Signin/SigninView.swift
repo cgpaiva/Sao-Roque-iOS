@@ -6,9 +6,15 @@
 //
 
 import UIKit
+import SnackBar
+import MHLoadingButton
+
+protocol SigninDelegate {
+    func createAccount(user: UserModel)
+}
 
 class SigninView: UIView {
-
+    
     var newAccountLabel: UILabel
     var containerView: UIView
     var emailTextField: UITextField
@@ -17,7 +23,13 @@ class SigninView: UIView {
     var emailLineView: UIView
     var passwordLineView: UIView
     var passwordIcon: UIImageView
-    var signinButton: UIButton
+    var signinButton: LoadingButton
+    var delegate: SigninDelegate?
+    var viewModel: SiginViewModelProtocol? {
+        didSet {
+            setupView()
+        }
+    }
     
     override init(frame: CGRect) {
         newAccountLabel = UILabel()
@@ -28,15 +40,35 @@ class SigninView: UIView {
         emailLineView = UIView()
         passwordLineView = UIView()
         passwordIcon = UIImageView()
-        signinButton = UIButton()
+        signinButton = LoadingButton(text: "Confirmar", buttonStyle: .fill)
         super.init(frame: frame)
-        setupView()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc private func doCreateAccount(sender: LoadingButton) {
+        
+        guard let emailText = emailTextField.text else { return }
+        guard let passwordText = passwordTextField.text else { return }
+        
+        viewModel?.validateFields(email: emailText, password: passwordText, completion: { result in
+            switch result {
+            case .success(let user):
+                sender.showLoader(userInteraction: false)
+                self.delegate?.createAccount(user: user)
+            case .failure(let error):
+                AppSnackBar.make(in: self, message: error.domain, duration: .lengthShort).show()
+                return
+                
+            }
+        })
+    }
+    
+    func hideLoading() {
+        self.signinButton.hideLoader()
+    }
     
 }
 
@@ -54,7 +86,7 @@ extension SigninView: ViewCodable {
     }
     
     func configConstraints() {
-    
+        
         containerView.snp.makeConstraints { make in
             make.top.equalToSuperview()
             make.bottom.equalToSuperview()
@@ -113,6 +145,7 @@ extension SigninView: ViewCodable {
             make.top.greaterThanOrEqualTo(passwordLineView.snp.bottom)
             make.trailing.equalTo(passwordLineView.snp.trailing)
             make.bottom.equalToSuperview().offset(-40)
+            make.height.equalTo(50)
         }
         
     }
@@ -127,13 +160,19 @@ extension SigninView: ViewCodable {
         passwordIcon.tintColor = lightGrayColor
         passwordLineView.backgroundColor = lightGrayColor
         signinButton.setTitleColor(.link, for: .normal)
+        signinButton.bgColor = .clear
+        signinButton.indicator = BallPulseIndicator(color: .link)
+        
+        passwordTextField.keyboardType = .numberPad
+        passwordTextField.isSecureTextEntry = true
+        emailTextField.keyboardType = .emailAddress
         
     }
     
     func configureViewsText() {
         let lightGrayColor = UIColor(named: "lightGray")
         newAccountLabel.text = "Nova conta"
-        signinButton.setTitle("Confirmar", for: .normal)
+        
         emailTextField.attributedPlaceholder = NSAttributedString(
             string: "Email",
             attributes: [NSAttributedString.Key.foregroundColor: lightGrayColor as Any]
@@ -146,6 +185,7 @@ extension SigninView: ViewCodable {
     }
     
     func configureActions() {
+        signinButton.addTarget(self, action: #selector(doCreateAccount(sender:)), for: .touchUpInside)
         
     }
     

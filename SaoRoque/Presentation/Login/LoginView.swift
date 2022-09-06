@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import MHLoadingButton
 
 protocol LoginViewDelegate {
     func signin()
@@ -32,7 +33,7 @@ class LoginView: UIView {
     var passwordTextField: UITextField
     var passwordLineView: UIView
     var forgotPasswordButton: UIButton
-    var loginButton: UIButton
+    var loginButton: LoadingButton
     var signinInfoLabel: UILabel
     var signinInfoLeadingView: UIView
     var signinInfoTrailingView: UIView
@@ -50,7 +51,7 @@ class LoginView: UIView {
         passwordTextField = UITextField()
         passwordLineView = UIView()
         forgotPasswordButton = UIButton()
-        loginButton = UIButton()
+        loginButton = LoadingButton(text: "Entrar", buttonStyle: .fill)
         signinInfoLabel = UILabel()
         signinInfoLeadingView = UIView()
         signinInfoTrailingView = UIView()
@@ -64,6 +65,11 @@ class LoginView: UIView {
     
     @objc private func doSignin(sender: UIButton) {
         delegate?.signin()
+    }
+    
+    
+    @objc private func doLogin(sender: LoadingButton) {
+        sender.showLoader(userInteraction: false)
     }
     
 }
@@ -204,8 +210,9 @@ extension LoginView: ViewCodable {
         titleLabel.font = UIFont(name: "Roboto-Bold", size: 31)
         forgotPasswordButton.setTitleColor(UIColor.link, for: .normal)
         forgotPasswordButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
-        loginButton.configuration = UIButton.Configuration.filled()
-        loginButton.configuration?.cornerStyle = .large
+        loginButton.indicator = BallPulseIndicator(color: .white)
+        loginButton.bgColor = .link
+        loginButton.setTitleColor(.white, for: .normal)
         signinButton.configuration = UIButton.Configuration.gray()
         signinButton.configuration?.cornerStyle = .large
         
@@ -229,13 +236,15 @@ extension LoginView: ViewCodable {
     
     func configureViewsText() {
         forgotPasswordButton.setTitle("Esqueceu sua senha?", for: .normal)
-        loginButton.setTitle("Entrar", for: .normal)
+//        loginButton.setTitle("Entrar", for: .normal)
         signinInfoLabel.text = "Ou"
         signinButton.setTitle("Criar nova conta", for: .normal)
     }
     
     func configureActions() {
         signinButton.addTarget(self, action: #selector(doSignin(sender:)), for: .touchUpInside)
+        
+        loginButton.addTarget(self, action: #selector(doLogin(sender:)), for: .touchUpInside)
     }
     
     

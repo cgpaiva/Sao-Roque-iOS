@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1078227352713-dlg2crkdls1pcumh1vtpgncm3koia0lo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1078227352713-dlg2crkdls1pcumh1vtpgncm3koia0lo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCUrpF3aVLR2y3vD2HXsbf86jJwEH4KgqI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1078227352713</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.saoroque</string>
+	<key>PROJECT_ID</key>
+	<string>paroquia-sao-roque-162de</string>
+	<key>STORAGE_BUCKET</key>
+	<string>paroquia-sao-roque-162de.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1078227352713:ios:2e9c02a0cda6dc5f899a58</string>
+</dict>
+</plist>

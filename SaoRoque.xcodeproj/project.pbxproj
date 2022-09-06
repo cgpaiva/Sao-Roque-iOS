@@ -14,6 +14,14 @@
 		C017BEC128BDA71B0007A212 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017BEC028BDA71B0007A212 /* SigninViewController.swift */; };
 		C017BEC328BDA7F20007A212 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017BEC228BDA7F20007A212 /* SigninView.swift */; };
 		C01F399B28C429C7006F5555 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F399A28C429C7006F5555 /* UIDevice+Extension.swift */; };
+		C01F39CD28C4E853006F5555 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C01F39CC28C4E853006F5555 /* GoogleService-Info.plist */; };
+		C01F39D028C4E91C006F5555 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C01F39CF28C4E91C006F5555 /* FirebaseAnalytics */; };
+		C01F39D228C4E91C006F5555 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C01F39D128C4E91C006F5555 /* FirebaseAuth */; };
+		C01F39D428C4E91C006F5555 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C01F39D328C4E91C006F5555 /* FirebaseFirestore */; };
+		C01F39D628C4E91C006F5555 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C01F39D528C4E91C006F5555 /* FirebaseStorage */; };
+		C01F39D928C57AD1006F5555 /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = C01F39D828C57AD1006F5555 /* SnackBar */; };
+		C01F39DB28C57DCB006F5555 /* AppSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F39DA28C57DCA006F5555 /* AppSnackBar.swift */; };
+		C01F39DE28C59863006F5555 /* MHLoadingButton in Frameworks */ = {isa = PBXBuildFile; productRef = C01F39DD28C59863006F5555 /* MHLoadingButton */; };
 		C03DC69628BB969D002B7F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DC69528BB969D002B7F75 /* AppDelegate.swift */; };
 		C03DC69828BB969D002B7F75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DC69728BB969D002B7F75 /* SceneDelegate.swift */; };
 		C03DC69A28BB969D002B7F75 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DC69928BB969D002B7F75 /* LoginViewController.swift */; };
@@ -28,6 +36,11 @@
 		C03DC6BF28BC3009002B7F75 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C03DC6BC28BC3009002B7F75 /* Roboto-Regular.ttf */; };
 		C03DC6C028BC3009002B7F75 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C03DC6BD28BC3009002B7F75 /* Roboto-Bold.ttf */; };
 		C06AD0D528BC3A8C00BCC84D /* ImageAssetsGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06AD0D428BC3A8C00BCC84D /* ImageAssetsGenerated.swift */; };
+		C0E0439528C6C66C00666AAD /* SigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0439428C6C66C00666AAD /* SigninViewModel.swift */; };
+		C0E0439828C6CE0A00666AAD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0439728C6CE0A00666AAD /* UserModel.swift */; };
+		C0E0439B28C6CF8400666AAD /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0439A28C6CF8400666AAD /* AccountService.swift */; };
+		C0E0439E28C6D44400666AAD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0439D28C6D44400666AAD /* HomeViewController.swift */; };
+		C0E043A028C6D49A00666AAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0439F28C6D49A00666AAD /* HomeView.swift */; };
 		D1EB7DF5559E9606491319C5 /* Pods_SaoRoque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CA30B4F77D3264FC9C09BB /* Pods_SaoRoque.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +53,8 @@
 		C017BEC028BDA71B0007A212 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		C017BEC228BDA7F20007A212 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		C01F399A28C429C7006F5555 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		C01F39CC28C4E853006F5555 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C01F39DA28C57DCA006F5555 /* AppSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSnackBar.swift; sourceTree = "<group>"; };
 		C03DC69228BB969D002B7F75 /* SaoRoque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaoRoque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03DC69528BB969D002B7F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C03DC69728BB969D002B7F75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +70,11 @@
 		C03DC6BC28BC3009002B7F75 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		C03DC6BD28BC3009002B7F75 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		C06AD0D428BC3A8C00BCC84D /* ImageAssetsGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssetsGenerated.swift; sourceTree = "<group>"; };
+		C0E0439428C6C66C00666AAD /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
+		C0E0439728C6CE0A00666AAD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C0E0439A28C6CF8400666AAD /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		C0E0439D28C6D44400666AAD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C0E0439F28C6D49A00666AAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CEF56723816DA76E3A65F202 /* Pods-SaoRoque.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaoRoque.debug.xcconfig"; path = "Target Support Files/Pods-SaoRoque/Pods-SaoRoque.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,9 +83,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01F39DE28C59863006F5555 /* MHLoadingButton in Frameworks */,
 				C03DC6B528BC2B9C002B7F75 /* SnapKit in Frameworks */,
+				C01F39D228C4E91C006F5555 /* FirebaseAuth in Frameworks */,
 				C017BEBE28BDA6110007A212 /* BottomSheet in Frameworks */,
+				C01F39D028C4E91C006F5555 /* FirebaseAnalytics in Frameworks */,
+				C01F39D628C4E91C006F5555 /* FirebaseStorage in Frameworks */,
+				C01F39D928C57AD1006F5555 /* SnackBar in Frameworks */,
 				D1EB7DF5559E9606491319C5 /* Pods_SaoRoque.framework in Frameworks */,
+				C01F39D428C4E91C006F5555 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +120,7 @@
 			children = (
 				C017BEC028BDA71B0007A212 /* SigninViewController.swift */,
 				C017BEC228BDA7F20007A212 /* SigninView.swift */,
+				C0E0439428C6C66C00666AAD /* SigninViewModel.swift */,
 			);
 			path = Signin;
 			sourceTree = "<group>";
@@ -119,6 +146,9 @@
 		C03DC69428BB969D002B7F75 /* SaoRoque */ = {
 			isa = PBXGroup;
 			children = (
+				C0E0439928C6CF7500666AAD /* Service */,
+				C0E0439628C6CDFB00666AAD /* Model */,
+				C01F39CC28C4E853006F5555 /* GoogleService-Info.plist */,
 				C03DC6B628BC2D92002B7F75 /* Extension */,
 				C03DC6AF28BB9A15002B7F75 /* Presentation */,
 				C03DC6AC28BB9935002B7F75 /* Infra */,
@@ -152,6 +182,7 @@
 		C03DC6AF28BB9A15002B7F75 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				C0E0439C28C6D43A00666AAD /* Home */,
 				C017BEBF28BDA70E0007A212 /* Signin */,
 				C03DC6B028BC2A73002B7F75 /* Login */,
 			);
@@ -175,6 +206,7 @@
 				C017BEB828BD9EDE0007A212 /* UIViewController+Extension.swift */,
 				C017BEBA28BDA03E0007A212 /* UITextField+Extension.swift */,
 				C01F399A28C429C7006F5555 /* UIDevice+Extension.swift */,
+				C01F39DA28C57DCA006F5555 /* AppSnackBar.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -206,6 +238,31 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		C0E0439628C6CDFB00666AAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0E0439728C6CE0A00666AAD /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0E0439928C6CF7500666AAD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C0E0439A28C6CF8400666AAD /* AccountService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C0E0439C28C6D43A00666AAD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C0E0439D28C6D44400666AAD /* HomeViewController.swift */,
+				C0E0439F28C6D49A00666AAD /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +284,12 @@
 			packageProductDependencies = (
 				C03DC6B428BC2B9C002B7F75 /* SnapKit */,
 				C017BEBD28BDA6110007A212 /* BottomSheet */,
+				C01F39CF28C4E91C006F5555 /* FirebaseAnalytics */,
+				C01F39D128C4E91C006F5555 /* FirebaseAuth */,
+				C01F39D328C4E91C006F5555 /* FirebaseFirestore */,
+				C01F39D528C4E91C006F5555 /* FirebaseStorage */,
+				C01F39D828C57AD1006F5555 /* SnackBar */,
+				C01F39DD28C59863006F5555 /* MHLoadingButton */,
 			);
 			productName = SaoRoque;
 			productReference = C03DC69228BB969D002B7F75 /* SaoRoque.app */;
@@ -259,6 +322,9 @@
 			packageReferences = (
 				C03DC6B328BC2B9C002B7F75 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				C017BEBC28BDA6110007A212 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+				C01F39CE28C4E91C006F5555 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C01F39D728C57AD1006F5555 /* XCRemoteSwiftPackageReference "SnackBar" */,
+				C01F39DC28C59863006F5555 /* XCRemoteSwiftPackageReference "loading-buttons-ios" */,
 			);
 			productRefGroup = C03DC69328BB969D002B7F75 /* Products */;
 			projectDirPath = "";
@@ -280,6 +346,7 @@
 				C03DC6BF28BC3009002B7F75 /* Roboto-Regular.ttf in Resources */,
 				C03DC6BE28BC3009002B7F75 /* Roboto-Light.ttf in Resources */,
 				C03DC6AA28BB97B9002B7F75 /* ImageAssets.xcassets in Resources */,
+				C01F39CD28C4E853006F5555 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,14 +404,20 @@
 				C03DC6B828BC2DA2002B7F75 /* UIView+Extension.swift in Sources */,
 				C017BEC328BDA7F20007A212 /* SigninView.swift in Sources */,
 				C017BEC128BDA71B0007A212 /* SigninViewController.swift in Sources */,
+				C0E0439E28C6D44400666AAD /* HomeViewController.swift in Sources */,
 				C03DC69A28BB969D002B7F75 /* LoginViewController.swift in Sources */,
+				C01F39DB28C57DCB006F5555 /* AppSnackBar.swift in Sources */,
 				C06AD0D528BC3A8C00BCC84D /* ImageAssetsGenerated.swift in Sources */,
 				C03DC6AE28BB9944002B7F75 /* ViewCodable.swift in Sources */,
+				C0E0439B28C6CF8400666AAD /* AccountService.swift in Sources */,
 				C017BEBB28BDA03E0007A212 /* UITextField+Extension.swift in Sources */,
+				C0E0439828C6CE0A00666AAD /* UserModel.swift in Sources */,
 				C017BEB728BD9DAB0007A212 /* LoginViewModel.swift in Sources */,
 				C03DC69628BB969D002B7F75 /* AppDelegate.swift in Sources */,
+				C0E0439528C6C66C00666AAD /* SigninViewModel.swift in Sources */,
 				C03DC6B228BC2AB2002B7F75 /* LoginView.swift in Sources */,
 				C03DC69828BB969D002B7F75 /* SceneDelegate.swift in Sources */,
+				C0E043A028C6D49A00666AAD /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +649,30 @@
 				version = 2.0.0;
 			};
 		};
+		C01F39CE28C4E91C006F5555 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 9.5.0;
+			};
+		};
+		C01F39D728C57AD1006F5555 /* XCRemoteSwiftPackageReference "SnackBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ahmedAlmasri/SnackBar.swift";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.2;
+			};
+		};
+		C01F39DC28C59863006F5555 /* XCRemoteSwiftPackageReference "loading-buttons-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twho/loading-buttons-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
 		C03DC6B328BC2B9C002B7F75 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -591,6 +688,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C017BEBC28BDA6110007A212 /* XCRemoteSwiftPackageReference "BottomSheet" */;
 			productName = BottomSheet;
+		};
+		C01F39CF28C4E91C006F5555 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C01F39CE28C4E91C006F5555 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C01F39D128C4E91C006F5555 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C01F39CE28C4E91C006F5555 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C01F39D328C4E91C006F5555 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C01F39CE28C4E91C006F5555 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C01F39D528C4E91C006F5555 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C01F39CE28C4E91C006F5555 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		C01F39D828C57AD1006F5555 /* SnackBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C01F39D728C57AD1006F5555 /* XCRemoteSwiftPackageReference "SnackBar" */;
+			productName = SnackBar;
+		};
+		C01F39DD28C59863006F5555 /* MHLoadingButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C01F39DC28C59863006F5555 /* XCRemoteSwiftPackageReference "loading-buttons-ios" */;
+			productName = MHLoadingButton;
 		};
 		C03DC6B428BC2B9C002B7F75 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;

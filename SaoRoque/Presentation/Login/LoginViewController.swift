@@ -8,6 +8,7 @@
 import UIKit
 import BottomSheet
 import MaterialComponents.MaterialBottomSheet
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -23,6 +24,14 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+//        verifyUserLogged()
+    
+    }
+    
+    func verifyUserLogged() {
+        if Auth.auth().currentUser != nil {
+            self.navigationController?.pushViewController(HomeViewController(), animated: true)
+        }
     }
 
 
@@ -31,7 +40,9 @@ class LoginViewController: UIViewController {
 extension LoginViewController: LoginViewDelegate {
     func signin() {
         
-        let signinModal = SigninViewController()
+        let signinModal = SigninViewController(navigationController: self.navigationController ?? UINavigationController())
+        
+        signinModal.newAccountDelegate = self
     
         let bottomSheet = MDCBottomSheetController(contentViewController: signinModal)
         
@@ -42,8 +53,15 @@ extension LoginViewController: LoginViewDelegate {
         
         signinModal.modalPresentationStyle = .pageSheet
         
-        
         self.present(bottomSheet, animated: true)
       
     }
+}
+
+extension LoginViewController: NewAccountDelegate {
+    func didSuccessCreateAccount() {
+        self.navigationController?.pushViewController(HomeViewController(), animated: true)
+    }
+    
+    
 }

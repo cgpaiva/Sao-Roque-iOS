@@ -11,7 +11,6 @@ class HomeViewController: UIViewController {
     
     override func loadView() {
         let homeView = HomeView()
-        homeView.backgroundColor = .cyan
         self.view = homeView
     }
     
